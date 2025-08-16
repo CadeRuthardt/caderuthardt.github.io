@@ -1,0 +1,156 @@
+<!--
+  Daycare Service Page
+
+  Describes structured play programs, pricing and benefits of the daycare
+  offering at Le Chateau Pet Resort. Uses a similar structure to the boarding
+  page for consistency.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Daycare – Le Chateau Pet Resort</title>
+  <meta name="description" content="Learn about our dog daycare programs including half-day, full-day and multi-day packages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="boarding.html">Boarding</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="locations/amarillo.html">Amarillo</a></li>
+            <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('assets/img/daycare-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Daycare Programs</h1>
+        <p>Structured play and enrichment for a happy, balanced dog.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">A Day at Daycare</h2>
+        <p>Your dog’s day begins with a warm greeting and a quick health check. We then introduce them to their playgroup based on size and temperament. Throughout the day they’ll enjoy a mix of active play, brain games and rest breaks under the watchful eye of our trained staff.</p>
+        <p>We maintain a low dog‑to‑handler ratio to ensure each pup receives personalized attention and positive reinforcement.</p>
+        <table class="pricing-table" aria-describedby="daycare-rates-desc">
+          <caption id="daycare-rates-desc">Daycare Rates</caption>
+          <thead>
+            <tr>
+              <th scope="col">Package</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Half Day (up to 5 hrs)</th>
+              <td>$22</td>
+            </tr>
+            <tr>
+              <th scope="row">Full Day</th>
+              <td>$32</td>
+            </tr>
+            <tr>
+              <th scope="row">10‑Day Package</th>
+              <td>$280</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top: var(--space-md); font-size: 0.9rem;">Packages must be used within 90 days of purchase. Daycare availability may be limited on holidays.</p>
+      </div>
+    </section>
+    <section class="section bg-light">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">Why Daycare?</h2>
+        <ul style="list-style: none; padding: 0; display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Healthy Exercise</h3>
+            <p>Regular activity helps maintain weight and reduces anxiety.</p>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Positive Socialization</h3>
+            <p>Controlled playgroups encourage polite behaviour and build confidence.</p>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Mental Stimulation</h3>
+            <p>Puzzles, scent games and training exercises keep minds sharp.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section bg-dark">
+      <div class="reveal" style="text-align:center;">
+        <h2 class="section-title" style="color: var(--color-secondary);">Let’s Play!</h2>
+        <p style="margin-bottom: var(--space-md);">Give your dog the gift of fun, structured play. Enrol in daycare today.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="button">Book Now</a>
+          <a href="boarding.html" class="button secondary">Explore Boarding</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="daycare.html">Daycare</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/amarillo.html">Amarillo</a></li>
+          <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="locations/index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

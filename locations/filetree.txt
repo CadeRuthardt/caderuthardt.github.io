@@ -1,0 +1,34 @@
+/website
+├── index.html
+├── about.html
+├── boarding.html
+├── daycare.html
+├── grooming.html
+├── gallery.html
+├── faq.html
+├── contact.html
+├── styles.css
+├── app.js
+├── assets/
+│   └── img/
+│       ├── logo.png
+│       ├── logo-alt.png
+│       ├── hero.jpg
+│       ├── boarding-hero.jpg
+│       ├── daycare-hero.jpg
+│       ├── grooming-hero.jpg
+│       ├── gallery-hero.jpg
+│       ├── faq-hero.jpg
+│       ├── contact-hero.jpg
+│       ├── locations-hero.jpg
+│       ├── location-amarillo.jpg
+│       ├── location-wichita.jpg
+│       ├── amarillo-hero.jpg
+│       ├── wichita-hero.jpg
+│       ├── map-amarillo.jpg
+│       ├── map-wichita.jpg
+│       └── ... (additional service / testimonial images)
+└── locations/
+    ├── index.html
+    ├── amarillo.html
+    └── wichita-falls.html

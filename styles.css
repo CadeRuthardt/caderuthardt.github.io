@@ -1,0 +1,544 @@
+/*
+ * Le Chateau Pet Resort – Global Stylesheet
+ *
+ * This stylesheet defines design tokens, base styles, components and responsive
+ * behaviours for the Le Chateau Pet Resort website. It is organized into
+ * sections to make it easy to locate and modify specific rules. The design
+ * emphasizes a luxurious, boutique feel with a rich burgundy and gold palette
+ * complemented by warm neutrals. Typography pairs an elegant script for
+ * headlines with clean sans‑serif faces for body copy. All components are
+ * crafted with accessibility, responsiveness and performance in mind.
+ */
+
+/* -------------------------------------------------------------------------
+   Design Tokens
+   ------------------------------------------------------------------------- */
+:root {
+  /* Colours */
+  --color-primary: #8c0017; /* rich burgundy for CTAs and accents */
+  --color-secondary: #d9ac27; /* warm gold used for highlights */
+  --color-dark: #403132; /* deep neutral for dark backgrounds */
+  --color-light: #f9f7f3; /* soft off‑white for light backgrounds */
+  --color-gray: #555555; /* general text colour */
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-script: 'Great Vibes', cursive;
+  --font-sans: 'PT Sans', sans-serif;
+  --font-condensed: 'Roboto Condensed', sans-serif;
+
+  /* Spacing (fluid scale) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 4.5rem;
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Layout */
+  --max-width: 1200px;
+}
+
+/* -------------------------------------------------------------------------
+   Base Reset & Typography
+   ------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-gray);
+  background: var(--color-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-condensed);
+  color: var(--color-dark);
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-family: var(--font-script);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--color-secondary);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: var(--space-sm);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-sm);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-sm);
+}
+
+.logo img {
+  height: 48px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: var(--space-sm);
+}
+
+.nav > li {
+  position: relative;
+}
+
+.nav a {
+  display: block;
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-condensed);
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.nav a:hover, .nav a:focus {
+  color: var(--color-primary);
+}
+
+.nav .dropdown {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-sm);
+  list-style: none;
+  display: none;
+  min-width: 10rem;
+  z-index: 10;
+}
+
+.nav li:hover > .dropdown,
+.nav li:focus-within > .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: var(--space-xs) var(--space-sm);
+  white-space: nowrap;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-dark);
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    flex-direction: column;
+    display: none;
+    padding: var(--space-sm) 0;
+    box-shadow: var(--shadow-md);
+  }
+  .nav > li {
+    margin: 0;
+  }
+  .nav li:hover > .dropdown,
+  .nav li:focus-within > .dropdown {
+    position: static;
+    box-shadow: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  color: var(--color-white);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  padding: var(--space-xl) var(--space-md);
+  z-index: 1;
+}
+
+.hero h1 {
+  color: var(--color-white);
+}
+
+.hero p {
+  font-family: var(--font-condensed);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-light);
+}
+
+/* Section */
+.section {
+  padding: var(--space-lg) var(--space-md);
+}
+
+.section.bg-light {
+  background: var(--color-light);
+}
+
+.section.bg-dark {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover, .button:focus {
+  background: #6f0014;
+}
+
+.button.secondary {
+  background: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.button.small {
+  font-size: 0.875rem;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: var(--space-md);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: var(--font-condensed);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+/* Pricing table */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-sm);
+}
+
+.pricing-table caption {
+  font-weight: bold;
+  margin-bottom: var(--space-sm);
+  text-align: left;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid var(--color-gray);
+  padding: var(--space-xs);
+  text-align: left;
+}
+
+.pricing-table th {
+  background: var(--color-light);
+}
+
+/* Accordion */
+.accordion h2 {
+  margin-bottom: 0;
+}
+
+.accordion button {
+  width: 100%;
+  text-align: left;
+  padding: var(--space-sm);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-condensed);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.accordion button:focus {
+  outline: 2px solid var(--color-secondary);
+}
+
+.accordion .panel {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-gray);
+  border-top: none;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  background: var(--color-light);
+}
+
+.accordion .panel p {
+  margin: 0;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid a:hover img,
+.gallery-grid a:focus img {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--radius-sm);
+}
+
+#lightbox button {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: var(--color-secondary);
+  color: var(--color-dark);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+/* Forms */
+form h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.form-group {
+  margin-bottom: var(--space-sm);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: var(--space-xs);
+  border: 1px solid var(--color-gray);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--color-secondary);
+}
+
+/* Footer */
+footer {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.footer-content {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: var(--max-width);
+  margin: 0 auto var(--space-md);
+}
+
+.footer-logo img {
+  height: 48px;
+  margin-bottom: var(--space-xs);
+}
+
+footer h4 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul a {
+  color: var(--color-light);
+  font-family: var(--font-condensed);
+}
+
+footer ul a:hover,
+footer ul a:focus {
+  color: var(--color-secondary);
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,153 @@
+<!--
+  Gallery Page
+
+  Displays a grid of images with a lightbox modal when images are clicked.
+  Uses semantic figure and figcaption for accessibility.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gallery – Le Chateau Pet Resort</title>
+  <meta name="description" content="Browse our photo gallery and see the luxury accommodations, play yards and grooming spa at Le Chateau Pet Resort.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="boarding.html">Boarding</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="locations/amarillo.html">Amarillo</a></li>
+            <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('assets/img/gallery-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Our Photo Gallery</h1>
+        <p>See what makes our resorts special.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <div class="gallery-grid">
+          <a href="assets/img/gallery1.jpg">
+            <figure>
+              <img src="assets/img/gallery1.jpg" alt="Dogs running in the play yard">
+              <figcaption class="sr-only">Dogs running in the play yard</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery2.jpg">
+            <figure>
+              <img src="assets/img/gallery2.jpg" alt="Luxury dog suite with plush bedding">
+              <figcaption class="sr-only">Luxury dog suite with plush bedding</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery3.jpg">
+            <figure>
+              <img src="assets/img/gallery3.jpg" alt="Cat lounging in a sunlit condo">
+              <figcaption class="sr-only">Cat lounging in a sunlit condo</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery4.jpg">
+            <figure>
+              <img src="assets/img/gallery4.jpg" alt="Groomer gently brushing a dog">
+              <figcaption class="sr-only">Groomer gently brushing a dog</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery5.jpg">
+            <figure>
+              <img src="assets/img/gallery5.jpg" alt="Indoor play area with toys">
+              <figcaption class="sr-only">Indoor play area with toys</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery6.jpg">
+            <figure>
+              <img src="assets/img/gallery6.jpg" alt="Dogs splashing in the pool">
+              <figcaption class="sr-only">Dogs splashing in the pool</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery7.jpg">
+            <figure>
+              <img src="assets/img/gallery7.jpg" alt="Staff member cuddling a cat">
+              <figcaption class="sr-only">Staff member cuddling a cat</figcaption>
+            </figure>
+          </a>
+          <a href="assets/img/gallery8.jpg">
+            <figure>
+              <img src="assets/img/gallery8.jpg" alt="Elegant reception area">
+              <figcaption class="sr-only">Elegant reception area</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" aria-label="Close gallery">&times;</button>
+    <img id="lightbox-img" alt="">
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="daycare.html">Daycare</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/amarillo.html">Amarillo</a></li>
+          <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="locations/index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

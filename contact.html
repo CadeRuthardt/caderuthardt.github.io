@@ -1,0 +1,132 @@
+<!--
+  Contact Page
+
+  Provides a contact form, lists address and phone for each location and
+  includes a map placeholder. The form is accessible and labelled.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact – Le Chateau Pet Resort</title>
+  <meta name="description" content="Contact Le Chateau Pet Resort to book a stay, schedule a tour or ask a question.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="boarding.html">Boarding</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="locations/amarillo.html">Amarillo</a></li>
+            <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('assets/img/contact-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Send us a message or call a location directly.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto; display:grid; gap: var(--space-lg); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <form id="contact-form" action="#" method="post" novalidate>
+          <h2 class="section-title">Send a Message</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="button">Submit</button>
+        </form>
+        <div>
+          <h2 class="section-title">Locations</h2>
+          <div class="location-info">
+            <h3>Amarillo</h3>
+            <p>8150 SW 77th Ave<br>Amarillo, TX 79119<br>Phone: <a href="tel:+18063311100">(806) 331‑1100</a><br>Email: <a href="mailto:info@lechateaupetresort.com">info@lechateaupetresort.com</a></p>
+            <h3>Wichita Falls</h3>
+            <p>5351 State Hwy 79 S<br>Wichita Falls, TX 76310<br>Phone: <a href="tel:+19404872002">(940) 487‑2002</a><br>Email: <a href="mailto:info.wf@lechateaupetresort.com">info.wf@lechateaupetresort.com</a></p>
+          </div>
+          <figure style="margin-top: var(--space-md); border-radius: var(--radius-md); overflow:hidden; box-shadow: var(--shadow-sm);">
+            <img src="assets/img/contact-map.jpg" alt="Map showing our locations" loading="lazy" style="width:100%; height:auto;">
+            <figcaption class="sr-only">Map showing both resort locations in Texas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="daycare.html">Daycare</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/amarillo.html">Amarillo</a></li>
+          <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="locations/index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

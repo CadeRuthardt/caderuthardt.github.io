@@ -1,0 +1,213 @@
+<!--
+  Amarillo Location Page
+
+  Provides detailed information about the Amarillo resort, including a brief
+  introduction, address, hours, contact information, offered services and
+  a call to action. A JSON‑LD LocalBusiness schema describes this
+  location for search engines. This file can be duplicated to create
+  pages for additional locations—update the TODO comments accordingly.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amarillo – Le Chateau Pet Resort</title>
+  <meta name="description" content="Discover our Amarillo luxury pet resort with premium boarding, daycare, grooming and training. View location details, hours and services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li>
+          <a href="../boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="../boarding.html">Boarding</a></li>
+            <li><a href="../daycare.html">Daycare</a></li>
+            <li><a href="../grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li>
+          <a href="../locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="amarillo.html">Amarillo</a></li>
+            <li><a href="wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('../assets/img/amarillo-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Amarillo Resort</h1>
+        <p>Premium boarding, daycare, grooming and training in the heart of Amarillo.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">Welcome to Amarillo</h2>
+        <p>Set on expansive grounds with seven outdoor yards and two indoor play arenas, our Amarillo location offers a boutique retreat for discerning pets. Climate‑controlled suites, soothing music and comfortable bedding create an oasis of calm, while our highly trained team provides attentive care and enrichment. Whether your companion is here for a day of structured play, an overnight stay, a spa treatment or obedience training, they'll enjoy a safe, luxurious experience.</p>
+        <p>We also host an upscale pet boutique stocked with toys, treats and accessories, so you can take a piece of the resort experience home.</p>
+      </div>
+    </section>
+    <!-- Location Details -->
+    <section class="section bg-light">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto; display: grid; gap: var(--space-lg); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div>
+          <h2 class="section-title">Visit Us</h2>
+          <p><strong>Address:</strong><br>8150 SW 77th Avenue<br>Amarillo, TX 79119</p>
+          <p><strong>Phone:</strong> <a href="tel:+18063311100">(806) 331‑1100</a><br>
+             <strong>Email:</strong> <a href="mailto:info@lechateaupetresort.com">info@lechateaupetresort.com</a></p>
+          <h3>Lobby Hours</h3>
+          <ul style="margin-left:1.25rem;">
+            <li>Monday – Friday: 7 AM – 7 PM</li>
+            <li>Saturday – Sunday: 8 AM – 6 PM</li>
+          </ul>
+          <div class="cta-buttons" style="margin-top: var(--space-md);">
+            <a href="../contact.html" class="button">Book Now</a>
+            <a href="tel:+18063311100" class="button secondary">Call Us</a>
+          </div>
+        </div>
+        <div>
+          <figure style="border-radius: var(--radius-md); overflow:hidden; box-shadow: var(--shadow-sm);">
+            <img src="../assets/img/map-amarillo.jpg" alt="Map showing the Amarillo location" loading="lazy" style="width:100%; height:auto; display:block;">
+            <figcaption class="sr-only">Map of 8150 SW 77th Avenue in Amarillo, Texas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- Services Offered -->
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">Services at This Location</h2>
+        <ul style="list-style:none; padding:0; display:grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Luxury Boarding</h3>
+            <p>Choose from standard suites or spacious villas for dogs, and private condos for cats. Includes daily play and attentive care.</p>
+            <a href="../boarding.html" class="text-link" style="margin-top:0.5rem; display:inline-block;">Learn more</a>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Daycare</h3>
+            <p>Structured playgroups and enrichment activities in our indoor and outdoor play areas keep your dog happy and healthy all day.</p>
+            <a href="../daycare.html" class="text-link" style="margin-top:0.5rem; display:inline-block;">Learn more</a>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Grooming &amp; Spa</h3>
+            <p>From quick baths to full‑service grooms, our gentle techniques and premium products will leave your pet looking and feeling fabulous.</p>
+            <a href="../grooming.html" class="text-link" style="margin-top:0.5rem; display:inline-block;">Learn more</a>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Training &amp; Boutique</h3>
+            <p>Enroll in obedience or agility classes led by our certified trainers. Visit the boutique for toys, treats and accessories.</p>
+            <a href="../about.html" class="text-link" style="margin-top:0.5rem; display:inline-block;">About us</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="section bg-dark">
+      <div class="reveal" style="text-align:center;">
+        <h2 class="section-title" style="color: var(--color-secondary);">Experience the Difference</h2>
+        <p style="margin-bottom: var(--space-md);">Schedule a tour or reserve a suite and discover why Le Chateau Amarillo is the Panhandle's premier pet resort.</p>
+        <div class="cta-buttons">
+          <a href="../contact.html" class="button">Tour Our Resort</a>
+          <a href="tel:+18063311100" class="button secondary">Call Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="../assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../boarding.html">Boarding</a></li>
+          <li><a href="../daycare.html">Daycare</a></li>
+          <li><a href="../grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="amarillo.html">Amarillo</a></li>
+          <li><a href="wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://lechateaupetresort.com/#amarillo",
+    "name": "Le Chateau Pet Resort – Amarillo",
+    "url": "https://lechateaupetresort.com/locations/amarillo.html",
+    "image": [
+      "https://lechateaupetresort.com/assets/img/location-amarillo.jpg"
+    ],
+    "telephone": "+1-806-331-1100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8150 SW 77th Ave",
+      "addressLocality": "Amarillo",
+      "addressRegion": "TX",
+      "postalCode": "79119",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.12998,
+      "longitude": -101.93067
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.mapquest.com/us/texas/le-chateau-pet-resort-261892399"
+    ]
+  }
+  </script>
+  <script src="../app.js"></script>
+</body>
+</html>

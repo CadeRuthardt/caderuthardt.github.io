@@ -1,0 +1,167 @@
+<!--
+  FAQ Page
+
+  Presents frequently asked questions using an accessible accordion component.
+  Includes FAQPage structured data for SEO.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FAQ – Le Chateau Pet Resort</title>
+  <meta name="description" content="Answers to common questions about vaccination requirements, booking policies and more at Le Chateau Pet Resort.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="boarding.html">Boarding</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="locations/amarillo.html">Amarillo</a></li>
+            <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('assets/img/faq-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Frequently Asked Questions</h1>
+        <p>Your questions answered about our services and policies.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <div class="accordion">
+          <h2><button aria-expanded="false">What vaccinations are required?</button></h2>
+          <div class="panel" hidden>
+            <p>All dogs must be current on Rabies, Bordetella and DHPP/DA2PP vaccines. Cats must be current on Rabies and FVRCP. Proof of vaccination is required prior to check‑in.</p>
+          </div>
+          <h2><button aria-expanded="false">Can I bring my pet’s own food and bedding?</button></h2>
+          <div class="panel" hidden>
+            <p>Absolutely! We encourage you to bring your pet’s preferred food to avoid stomach upset. You may also bring a familiar blanket or toy to make them feel at home.</p>
+          </div>
+          <h2><button aria-expanded="false">How far in advance should I book?</button></h2>
+          <div class="panel" hidden>
+            <p>During peak travel seasons and holidays, suites book quickly. We recommend reserving at least four weeks in advance. For regular stays, 1–2 weeks’ notice is usually sufficient.</p>
+          </div>
+          <h2><button aria-expanded="false">Do you administer medications?</button></h2>
+          <div class="panel" hidden>
+            <p>Yes, our trained staff can administer oral or topical medications. Please bring all medications in their original containers with clear dosing instructions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-dark">
+      <div class="reveal" style="text-align:center;">
+        <h2 class="section-title" style="color: var(--color-secondary);">Still have questions?</h2>
+        <p style="margin-bottom: var(--space-md);">We’re here to help. Contact us and one of our friendly concierges will assist you.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="button">Contact Us</a>
+          <a href="locations/index.html" class="button secondary">Find a Location</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="daycare.html">Daycare</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/amarillo.html">Amarillo</a></li>
+          <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="locations/index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What vaccinations are required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All dogs must be current on Rabies, Bordetella and DHPP/DA2PP vaccines. Cats must be current on Rabies and FVRCP. Proof of vaccination is required prior to check‑in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I bring my pet’s own food and bedding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We encourage you to bring your pet’s preferred food to avoid stomach upset. You may also bring a familiar blanket or toy to make them feel at home."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During peak travel seasons and holidays, suites book quickly. We recommend reserving at least four weeks in advance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you administer medications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our trained staff can administer oral or topical medications. Please bring all medications in their original containers with clear dosing instructions."
+        }
+      }
+    ]
+  }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

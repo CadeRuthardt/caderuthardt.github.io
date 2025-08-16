@@ -1,0 +1,173 @@
+<!--
+  Boarding Service Page
+
+  Details the premium boarding options available at Le Chateau Pet Resort for
+  both dogs and cats. A pricing table outlines nightly rates and included
+  amenities, while add‑ons are listed for customization. This template can be
+  copied and adapted to create new service pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Boarding – Le Chateau Pet Resort</title>
+  <meta name="description" content="Explore luxury boarding suites for dogs and cats at Le Chateau Pet Resort. Learn about our accommodations, amenities and nightly rates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Le Chateau Pet Resort logo"></a>
+      <button class="mobile-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="boarding.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="boarding.html">Boarding</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="locations/index.html">Locations</a>
+          <ul class="dropdown">
+            <li><a href="locations/amarillo.html">Amarillo</a></li>
+            <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" style="background-image:url('assets/img/boarding-hero.jpg');">
+      <div class="hero-content reveal">
+        <h1>Luxury Boarding</h1>
+        <p>Resort‑style accommodations for dogs and cats. Because your pet deserves the best.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">Accommodations</h2>
+        <p>Our boarding suites are designed to feel like a five‑star hotel. Dogs can choose from standard suites or spacious villas, each furnished with cosy bedding, natural light and climate control. Cats lounge in private condos stocked with soft blankets and climbing perches.</p>
+        <p>Every stay includes daily housekeeping, fresh water and premium meals. We offer webcam access in select suites so you can check in on your pet from anywhere.</p>
+        <table class="pricing-table" aria-describedby="boarding-rates-desc">
+          <caption id="boarding-rates-desc">Nightly Rates</caption>
+          <thead>
+            <tr>
+              <th scope="col">Accommodation</th>
+              <th scope="col">Dogs</th>
+              <th scope="col">Cats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Standard Suite</th>
+              <td>$45/night</td>
+              <td>$28/night</td>
+            </tr>
+            <tr>
+              <th scope="row">Luxury Villa</th>
+              <td>$65/night</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <th scope="row">Cat Condo</th>
+              <td>—</td>
+              <td>$38/night</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top: var(--space-md); font-size: 0.9rem;">Prices are per night. Multi‑pet and extended stay discounts are available.</p>
+      </div>
+    </section>
+    <section class="section bg-light">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">What's Included</h2>
+        <ul style="list-style: none; padding: 0; display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Daily Playtime</h3>
+            <p>Supervised group play or one‑on‑one enrichment tailored to your pet's temperament.</p>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Room Service</h3>
+            <p>Premium meals served twice daily and fresh water replenished throughout the day.</p>
+          </li>
+          <li style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-md); box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--space-xs);">Comfort &amp; Care</h3>
+            <p>Daily housekeeping, comfy bedding, climate control and soothing music for restful naps.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="reveal" style="max-width: var(--max-width); margin: 0 auto;">
+        <h2 class="section-title">Add‑Ons</h2>
+        <p>Customize your pet's stay with special extras:</p>
+        <ul style="margin-left: 1.25rem;">
+          <li>Additional play or cuddle time</li>
+          <li>Nature walks and agility sessions</li>
+          <li>On‑site grooming and spa treatments</li>
+          <li>Medication administration</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section bg-dark">
+      <div class="reveal" style="text-align:center;">
+        <h2 class="section-title" style="color: var(--color-secondary);">Ready to book a suite?</h2>
+        <p style="margin-bottom: var(--space-md);">Reserve your pet's luxury stay today and enjoy peace of mind while you're away.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="button">Book Now</a>
+          <a href="gallery.html" class="button">View Suites</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/img/logo-alt.png" alt="Le Chateau Pet Resort logo">
+        <p>Luxury pet hotel, daycare, spa &amp; boutique.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="daycare.html">Daycare</a></li>
+          <li><a href="grooming.html">Grooming</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="locations/amarillo.html">Amarillo</a></li>
+          <li><a href="locations/wichita-falls.html">Wichita Falls</a></li>
+          <li><a href="locations/index.html">All Locations</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2025 Le Chateau Pet Resort. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
